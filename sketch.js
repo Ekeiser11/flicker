@@ -3,9 +3,13 @@ var bubbles = [];
 function setup() {
   createCanvas (600, 400)
   frameRate(20)
-  for (var i = 0; i < 40; i++){
+  for (var i = 0; i < 4; i++){
     bubbles[i] = new Bubble()
   }
+}
+
+function mousePressed(){
+  bubbles.push(new Bubble())
 }
 
 function draw() {
